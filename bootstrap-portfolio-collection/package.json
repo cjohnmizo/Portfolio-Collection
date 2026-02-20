@@ -1,0 +1,18 @@
+{
+  "name": "bootstrap-portfolio-collection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview:generate": "node tools/preview-generator.js",
+    "preview:generate:full": "node tools/preview-generator.js --fullpage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "playwright": "^1.58.2"
+  }
+}
