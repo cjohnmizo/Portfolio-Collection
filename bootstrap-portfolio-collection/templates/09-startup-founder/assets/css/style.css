@@ -1,0 +1,31 @@
+/* Created by cjohnmizo - Authorized */
+/* Startup Founder Theme */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.hover-y {
+  transition: transform 0.3s ease;
+}
+
+.hover-y:hover {
+  transform: translateY(-5px);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+#vertical-nav .active {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.bg-pattern {
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}

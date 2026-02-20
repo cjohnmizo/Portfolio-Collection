@@ -1,0 +1,250 @@
+<!-- Created by <a href="https://cjohnmizo.vercel.app/" target="_blank">cjohnmizo</a> - Authorized -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Profile</title>
+    <meta
+      name="description"
+      content="Horizontal Scroll Photography Portfolio"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg-black text-white overflow-hidden">
+    <nav
+      class="navbar fixed-top p-4 d-flex justify-content-between align-items-center z-3 mix-blend-difference"
+    >
+      <a class="navbar-brand text-white fw-bold fs-3 tracking-widest" href="#"
+        >LENS.</a
+      >
+
+      <button
+        class="btn btn-link text-white text-decoration-none fs-5 d-md-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+      >
+        Menu
+      </button>
+
+      <div class="d-none d-md-block">
+        <a
+          href="#gallery"
+          class="text-white text-decoration-none mx-3 small text-uppercase tracking-widest"
+          >Gallery</a
+        >
+        <a
+          href="#about"
+          class="text-white text-decoration-none mx-3 small text-uppercase tracking-widest"
+          data-bs-toggle="modal"
+          data-bs-target="#aboutModal"
+          >About</a
+        >
+        <a
+          href="#contact"
+          class="text-white text-decoration-none mx-3 small text-uppercase tracking-widest"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Horizontal Scroll Container -->
+    <main class="h-scroll-container d-flex align-items-center h-100vh">
+      <!-- Intro Slide -->
+      <section
+        class="h-scroll-item h-100vw d-flex align-items-center justify-content-center px-5 flex-shrink-0"
+      >
+        <div class="text-center">
+          <h1 class="display-1 fst-italic">
+            Capturing <br />
+            <span class="fw-light">Moments</span>
+          </h1>
+          <p class="mt-3 text-white-50 small text-uppercase tracking-widest">
+            Scroll to explore &rarr;
+          </p>
+        </div>
+      </section>
+
+      <!-- Photo 1 -->
+      <section
+        class="h-scroll-item h-100vh d-flex align-items-center justify-content-center px-2 px-md-5 flex-shrink-0"
+      >
+        <div class="position-relative hover-reveal">
+          <img
+            src="../../shared/assets/img/placeholder.svg"
+            class="img-fluid vh-75 shadow-lg"
+            alt="Photo 1"
+          />
+          <div
+            class="position-absolute bottom-0 start-0 p-4 opacity-0 hover-reveal-content transition"
+          >
+            <h3 class="h2 fst-italic">Urban Solitude</h3>
+            <p class="small text-white-50">Tokyo, 2023</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photo 2 -->
+      <section
+        class="h-scroll-item h-100vh d-flex align-items-center justify-content-center px-2 px-md-5 flex-shrink-0"
+      >
+        <div class="position-relative hover-reveal">
+          <img
+            src="../../shared/assets/img/placeholder.svg"
+            class="img-fluid vh-75 shadow-lg"
+            alt="Photo 2"
+          />
+          <div
+            class="position-absolute bottom-0 start-0 p-4 opacity-0 hover-reveal-content transition"
+          >
+            <h3 class="h2 fst-italic">Golden Hour</h3>
+            <p class="small text-white-50">Kyoto, 2023</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photo 3 -->
+      <section
+        class="h-scroll-item h-100vh d-flex align-items-center justify-content-center px-2 px-md-5 flex-shrink-0"
+      >
+        <div class="position-relative hover-reveal">
+          <img
+            src="../../shared/assets/img/placeholder.svg"
+            class="img-fluid vh-75 shadow-lg"
+            alt="Photo 3"
+          />
+          <div
+            class="position-absolute bottom-0 start-0 p-4 opacity-0 hover-reveal-content transition"
+          >
+            <h3 class="h2 fst-italic">Neon Nights</h3>
+            <p class="small text-white-50">Osaka, 2023</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Outro Slide -->
+      <section
+        class="h-scroll-item h-100vw d-flex align-items-center justify-content-center px-5 flex-shrink-0 bg-white text-black"
+      >
+        <div class="text-center">
+          <h2 class="display-2 mb-4">Let's Create Together</h2>
+          <button
+            class="btn btn-outline-dark rounded-0 px-5 py-3 text-uppercase tracking-widest"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            Get in Touch
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-black text-white">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            class="modal-body d-flex align-items-center justify-content-center"
+          >
+            <div class="container row">
+              <div class="col-md-6">
+                <img
+                  src="../../shared/assets/img/placeholder.svg"
+                  class="img-fluid"
+                  alt="About"
+                />
+              </div>
+              <div
+                class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-4 mt-md-0"
+              >
+                <h2 class="display-3 mb-4 fst-italic">About the Artist</h2>
+                <p class="lead text-white-50">
+                  I am a visual storyteller fascinated by light, shadow, and the
+                  human emotion. My work explores the quiet moments in chaotic
+                  cities.
+                </p>
+
+                <h4
+                  class="mt-5 mb-3 h6 text-uppercase tracking-widest text-white"
+                >
+                  Exhibitions
+                </h4>
+                <ul class="list-unstyled text-white-50">
+                  <li>2023 - Modern Art Gallery, NY</li>
+                  <li>2022 - Visual Space, London</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-0">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Contact Me</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-5">
+            <form>
+              <div class="mb-4">
+                <label class="form-label text-white-50">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control bg-black border-secondary text-white rounded-0"
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label text-white-50">Message</label>
+                <textarea
+                  rows="4"
+                  class="form-control bg-black border-secondary text-white rounded-0"
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-white bg-white text-black w-100 rounded-0 py-3 text-uppercase tracking-widest"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

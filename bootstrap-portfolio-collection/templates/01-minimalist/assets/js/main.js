@@ -1,0 +1,2 @@
+/* Created by cjohnmizo - Authorized */
+// Minimalist JS document.addEventListener('DOMContentLoaded', () => {     // Back to top button visibility     const backToTop = document.querySelector('.back-to-top');     window.addEventListener('scroll', () => {         if (window.scrollY > 300) {             backToTop.classList.remove('d-none');         } else {             backToTop.classList.add('d-none');         }     }); });

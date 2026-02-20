@@ -1,0 +1,2 @@
+/* Created by cjohnmizo - Authorized */
+// Creative Grid JS document.addEventListener('DOMContentLoaded', () => {     // Initializing Masonry via Library if needed, but CSS columns handle most of it gracefully.     // If we wanted true Masonry we could init it here:     /*     var grid = document.querySelector('.masonry-grid-dummy');     var msnry = new Masonry( grid, {       itemSelector: '.item',       columnWidth: '.item',       percentPosition: true     });     */ });

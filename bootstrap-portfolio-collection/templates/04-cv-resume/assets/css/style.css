@@ -1,0 +1,49 @@
+/* Created by cjohnmizo - Authorized */
+/* CV Resume Theme */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Mono", monospace;
+}
+.avatar-placeholder {
+  width: 120px;
+  height: 120px;
+}
+.tracking-wider {
+  letter-spacing: 0.1em;
+}
+.h-2px {
+  height: 3px;
+} /* Print Styles */
+@media print {
+  body {
+    background: white !important;
+  }
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+  .col-lg-4 {
+    background-color: #f8f9fa !important;
+    color: #000 !important;
+  }
+  .text-white,
+  .text-white-50 {
+    color: #000 !important;
+  }
+  .btn,
+  .no-print {
+    display: none !important;
+  }
+}

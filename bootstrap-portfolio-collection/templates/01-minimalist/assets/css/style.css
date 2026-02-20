@@ -1,0 +1,34 @@
+/* Created by cjohnmizo - Authorized */
+/* Minimalist Theme */
+body {
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+}
+.tracking-wide {
+  letter-spacing: 0.2em;
+}
+.project-card img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.project-card:hover img {
+  transform: scale(1.02);
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+}
+.nav-link {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.nav-link.active {
+  color: #000 !important;
+} /* Smooth Scroll behavior handled by Bootstrap scrollspy + CSS */
+html {
+  scroll-behavior: smooth;
+}

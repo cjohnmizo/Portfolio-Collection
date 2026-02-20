@@ -1,0 +1,38 @@
+/* Created by cjohnmizo - Authorized */
+/* Creative Grid Theme */
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+.min-h-300 {
+  min-height: 300px;
+}
+.hover-opacity:hover {
+  opacity: 1 !important;
+}
+.transition {
+  transition: all 0.3s ease;
+}
+.tracking-widest {
+  letter-spacing: 0.25em;
+} /* Masonry Fallback for non-js */
+@media (min-width: 992px) {
+  .masonry-grid-dummy {
+    /* CSS Columns approach can be used nicely without JS */
+    column-count: 3;
+    column-gap: 1.5rem;
+  }
+  .masonry-grid-dummy .item {
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .masonry-grid-dummy {
+    column-count: 2;
+    column-gap: 1.5rem;
+  }
+  .masonry-grid-dummy .item {
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,68 @@
+/* Created by cjohnmizo - Authorized */
+/* Photography Theme */
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.tracking-widest {
+  letter-spacing: 0.2em;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.h-100vw {
+  width: 60vw;
+}
+
+.vh-75 {
+  height: 75vh;
+  width: auto;
+  object-fit: cover;
+}
+
+.h-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.h-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.h-scroll-item {
+  scroll-snap-align: center;
+  display: inline-flex;
+  /* Fix for whitespace nowrap */
+  white-space: normal;
+  /* Reset for inner content */
+}
+
+.mix-blend-difference {
+  mix-blend-mode: difference;
+}
+
+.hover-reveal-content {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  width: 100%;
+}
+
+.transition {
+  transition: opacity 0.4s ease;
+}
+
+.hover-reveal:hover .hover-reveal-content {
+  opacity: 1 !important;
+}
+
+/* Modal Fullscreen Override */
+.modal-fullscreen .modal-content {
+  border-radius: 0;
+}

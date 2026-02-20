@@ -1,0 +1,50 @@
+/* Created by cjohnmizo - Authorized */
+/* Developer Terminal Theme */
+body {
+  font-family: "Fira Code", monospace;
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.hover-accent:hover {
+  color: var(--bs-warning) !important;
+  text-decoration: underline !important;
+}
+
+.hover-border-success:hover {
+  border-color: var(--bs-success) !important;
+}
+
+.transition {
+  transition: all 0.2s ease;
+}
+
+/* Custom Scrollbar for "Hackerman" feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

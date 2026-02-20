@@ -1,0 +1,50 @@
+/* Created by cjohnmizo - Authorized */
+/* Dark Pro Theme */
+:root {
+  --bs-primary: #6366f1;
+  --bs-body-bg: #000;
+}
+body {
+  font-family: "Outfit", sans-serif;
+}
+.text-gradient {
+  background: linear-gradient(45deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.glow-bg {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(99, 102, 241, 0.15) 0%,
+    transparent 50%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+.hover-lift {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+}
+.card-img-top img {
+  transition: transform 0.5s ease;
+}
+.card:hover .card-img-top img {
+  transform: scale(1.05);
+} /* Form focus */
+.form-control:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25);
+  border-color: var(--bs-primary);
+}
