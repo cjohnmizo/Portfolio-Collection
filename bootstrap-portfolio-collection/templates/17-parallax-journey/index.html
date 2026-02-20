@@ -1,0 +1,124 @@
+<!-- Created by cjohnmizo - Authorized -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Journey - cjohnmizo</title>
+    <meta name="description" content="Parallax Journey Portfolio Template" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation Overlay -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 transition-nav" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand font-serif fs-3 fw-bold tracking-widest text-uppercase" href="#">Journey.</a>
+            <div class="d-none d-md-flex gap-4">
+                <a class="nav-link text-white font-sans text-uppercase fs-7 tracking-widest" href="#chapter1">Chapter
+                    1</a>
+                <a class="nav-link text-white font-sans text-uppercase fs-7 tracking-widest" href="#chapter2">Chapter
+                    2</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Parallax Hero -->
+    <header class="parallax-section d-flex align-items-center justify-content-center text-center text-white"
+        style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80');">
+        <div class="bg-overlay"></div>
+        <div class="container position-relative z-1">
+            <h1 class="display-1 font-serif fw-bold mb-3">Explore the Depth</h1>
+            <p class="lead font-sans fw-light tracking-widest text-uppercase mb-5">Scroll to begin the journey</p>
+            <div class="scroll-indicator pb-3">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Block 1 -->
+    <section class="py-5 bg-white text-dark min-vh-50 d-flex align-items-center" id="chapter1">
+        <div class="container py-5">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-5 offset-lg-1">
+                    <h2 class="display-4 font-serif fw-bold mb-4">The Process</h2>
+                    <p class="lead font-sans fw-light text-muted mb-4">
+                        Every great design begins with an even better story. Through deep research and empathetic
+                        understanding, we craft narratives that resonate.
+                    </p>
+                    <a href="#"
+                        class="btn btn-outline-dark font-sans text-uppercase tracking-widest py-2 px-4 rounded-0">Read
+                        More</a>
+                </div>
+                <div class="col-lg-5 offset-lg-1 mt-5 mt-lg-0">
+                    <!-- Simulated Parallax Image within content -->
+                    <div class="img-wrapper overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
+                            alt="Process" class="img-fluid w-100 parallax-img-effect" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Divider -->
+    <section class="parallax-section min-vh-50 d-flex align-items-center"
+        style="background-image: url('https://images.unsplash.com/photo-1506744626753-140283b2dbf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+        <div class="bg-overlay opacity-50"></div>
+        <div class="container position-relative z-1 text-center text-white py-5">
+            <h2 class="display-3 font-serif fw-bold italic mb-0">"Design is thinking made visual."</h2>
+        </div>
+    </section>
+
+    <!-- Content Block 2 -->
+    <section class="py-5 bg-dark text-white min-vh-50 d-flex align-items-center" id="chapter2">
+        <div class="container py-5">
+            <div class="row align-items-center flex-row-reverse py-5">
+                <div class="col-lg-5 offset-lg-1">
+                    <h2 class="display-4 font-serif fw-bold mb-4">The Execution</h2>
+                    <p class="lead font-sans fw-light text-white-50 mb-4">
+                        Translating thought into form. We leverage modern technologies to ensure cross-platform
+                        consistency and breathtaking visuals.
+                    </p>
+                    <a href="#"
+                        class="btn btn-outline-light font-sans text-uppercase tracking-widest py-2 px-4 rounded-0">View
+                        Gallery</a>
+                </div>
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="img-wrapper overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80"
+                            alt="Execution" class="img-fluid w-100 parallax-img-effect" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Parallax -->
+    <footer class="parallax-section min-vh-100 d-flex align-items-center justify-content-center text-center text-white"
+        style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+        <div class="bg-overlay opacity-75"></div>
+        <div class="container position-relative z-1 py-5">
+            <h2 class="display-2 font-serif fw-bold mb-5">Start Your Journey.</h2>
+            <a href="mailto:hello@example.com"
+                class="btn btn-light font-sans text-uppercase tracking-widest py-3 px-5 rounded-0 mb-5 text-dark fw-bold">Contact
+                Me</a>
+            <div class="mt-5 pt-5 border-top border-light border-opacity-25 w-50 mx-auto">
+                <p class="font-sans tracking-widest small text-white-50 text-uppercase">&copy; 2024 Journey. All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

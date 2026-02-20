@@ -1,0 +1,117 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+    font-family: 'Lato', sans-serif;
+}
+
+.tracking-widest {
+    letter-spacing: 0.15em;
+}
+
+.fs-7 {
+    font-size: 0.85rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Background Overlay */
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Parallax Background using CSS */
+.parallax-section {
+    position: relative;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Parallax image zoom effect */
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.parallax-img-effect {
+    transition: transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.img-wrapper:hover .parallax-img-effect {
+    transform: scale(1.05);
+}
+
+/* Navbar Transition JS Hook */
+.transition-nav {
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.nav-scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+/* Mouse Scroll Animation */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+    position: relative;
+}
+
+.wheel {
+    width: 4px;
+    height: 10px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 20px);
+        opacity: 0;
+    }
+}
+
+/* Fallback for iOS devices where fixed background fails */
+@supports (-webkit-touch-callout: none) {
+    .parallax-section {
+        background-attachment: scroll;
+    }
+}

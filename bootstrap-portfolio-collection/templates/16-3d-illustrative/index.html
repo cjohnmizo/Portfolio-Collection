@@ -1,0 +1,117 @@
+<!-- Created by cjohnmizo - Authorized -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Illustrative - cjohnmizo</title>
+    <meta name="description" content="3D Illustrative Portfolio Template" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-soft-blue">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div
+            class="container d-flex justify-content-between align-items-center bg-white rounded-pill px-4 py-2 shadow-soft">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="#">Studio 3D</a>
+            <div class="d-none d-md-flex gap-4">
+                <a class="nav-link fw-semibold text-dark hover-pop" href="#work">Work</a>
+                <a class="nav-link fw-semibold text-dark hover-pop" href="#about">About</a>
+            </div>
+            <a href="#contact" class="btn btn-primary rounded-pill px-4 fw-bold shadow-btn hover-pop">Say Hello</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container text-center py-5 my-5 position-relative">
+        <div
+            class="badge bg-white text-primary rounded-pill px-3 py-2 fw-bold shadow-soft mb-4 d-inline-block hover-pop">
+            👋 Welcome to my playful space!
+        </div>
+        <h1 class="display-2 fw-bold text-dark mb-4 text-shadow-soft">
+            I bring <span class="text-primary position-relative d-inline-block">ideas
+                <svg class="position-absolute w-100 h-100 start-0 top-0 translate-middle-y z-n1"
+                    style="stroke: #FFD166; stroke-width: 8; fill: none; stroke-linecap: round; transform: translateY(30%);">
+                    <path d="M5,40 Q50,5 150,40"></path>
+                </svg>
+            </span> to life.
+        </h1>
+        <p class="lead text-muted max-w-paragraph mx-auto mb-5 fw-semibold fs-4">
+            Specializing in vibrant 3D illustrations, interactive web design, and joyful user experiences.
+        </p>
+
+        <!-- Floating "3D" elements (simulated with CSS shadows & transforms) -->
+        <div class="position-absolute d-none d-lg-block shape-float bg-warning rounded-circle shadow-3d top-0 start-0 translate-middle"
+            style="width: 80px; height: 80px; transform: translate(100px, 0);"></div>
+        <div class="position-absolute d-none d-lg-block shape-float-delay bg-danger rounded shadow-3d bottom-0 end-0 translate-middle"
+            style="width: 100px; height: 100px; transform: translate(-100px, -50px); border-radius: 20px !important;">
+        </div>
+
+        <img src="../../shared/assets/img/placeholder.svg" alt="3D Hero Illustration"
+            class="img-fluid mx-auto d-block shadow-3d rounded-4"
+            style="max-width: 800px; height: 400px; object-fit: cover; background-color: #f8f9fa;">
+    </header>
+
+    <!-- Project Gallery -->
+    <section class="container py-5 mt-5" id="work">
+        <h2 class="display-5 fw-bold text-center mb-5 text-dark text-shadow-soft">Featured Joyful Work</h2>
+        <div class="row g-5">
+
+            <!-- Card 1 -->
+            <div class="col-md-6">
+                <div class="card bg-white border-0 shadow-3d rounded-4 overflow-hidden h-100 p-2 hover-pop card-tilt">
+                    <img src="../../shared/assets/img/placeholder.svg" class="card-img-top rounded-4 bg-light"
+                        alt="Project 1" style="height: 250px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <span class="badge bg-soft-blue text-primary rounded-pill mb-2 fw-bold">UI Design</span>
+                        <h3 class="fw-bold h4 mb-2">Toy Store App</h3>
+                        <p class="text-muted fw-semibold">A colorful shopping experience built for kids and parents
+                            alike.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6 mt-md-5">
+                <div class="card bg-white border-0 shadow-3d rounded-4 overflow-hidden h-100 p-2 hover-pop card-tilt">
+                    <img src="../../shared/assets/img/placeholder.svg" class="card-img-top rounded-4 bg-light"
+                        alt="Project 2" style="height: 250px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <span class="badge bg-soft-orange text-warning rounded-pill mb-2 fw-bold pb-2">3D
+                            Modeling</span>
+                        <h3 class="fw-bold h4 mb-2">Abstract Shapes Pack</h3>
+                        <p class="text-muted fw-semibold">A collection of 50+ playful 3D shapes for modern marketing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer class="container text-center py-5 my-5" id="contact">
+        <div class="bg-primary text-white rounded-4 p-5 shadow-3d-lg position-relative overflow-hidden">
+            <div class="position-relative z-1">
+                <h2 class="display-4 fw-bold mb-4">Ready to play?</h2>
+                <p class="lead mb-4 fw-semibold text-white-50">Let's build something colorful together.</p>
+                <a href="mailto:hello@example.com"
+                    class="btn btn-warning btn-lg rounded-pill px-5 fw-bold shadow-btn hover-pop text-dark">Start a
+                    Project</a>
+            </div>
+            <!-- Decorative bg circle -->
+            <div class="position-absolute bg-white opacity-25 rounded-circle"
+                style="width: 300px; height: 300px; top: -100px; right: -50px;"></div>
+        </div>
+        <p class="text-muted fw-semibold mt-4 small">&copy; 2024 Studio 3D. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

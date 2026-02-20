@@ -1,0 +1,79 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tracking-widest {
+    letter-spacing: 0.15em;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.transition-transform {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hover-opacity:hover {
+    opacity: 0.7;
+}
+
+/* Split Layout Architecture */
+.split-layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.split-side {
+    width: 100%;
+}
+
+/* On Desktop: Side-by-Side */
+@media (min-width: 992px) {
+    .split-layout {
+        flex-direction: row;
+        height: 100vh;
+        overflow: hidden;
+        /* prevent body scroll */
+    }
+
+    /* Fixed Left Pane */
+    .split-left {
+        width: 45%;
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        top: 0;
+    }
+
+    /* Scrolling Right Pane */
+    .split-right {
+        width: 55%;
+        margin-left: 45%;
+        height: 100vh;
+        overflow-y: auto;
+    }
+}
+
+/* Left pane background styling */
+.split-left {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+        url('https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    /* space for mobile */
+}
+
+/* Image Interactions */
+.project-item:hover .transition-transform {
+    transform: scale(1.05);
+}
+
+.email-link:hover {
+    text-decoration: underline !important;
+}
