@@ -11,8 +11,8 @@ Designed for developers, designers, photographers, and founders.
 
 1.  **Clone or Download** this repository.
 2.  Open `index.html` in your browser to view the gallery of all templates.
-3.  Choose your favorite template from the `templates/` folder.
-4.  Copy the template folder (e.g., `templates/01-minimalist`) to a new location to start your project.
+3.  Choose your favorite template from the `bootstrap-portfolio-collection/templates/` folder.
+4.  Copy the template folder (e.g., `bootstrap-portfolio-collection/templates/01-minimalist`) to a new location to start your project.
 
 ## 📂 Structure
 
@@ -20,9 +20,9 @@ Designed for developers, designers, photographers, and founders.
 bootstrap-portfolio-collection/
 ├── index.html              # Gallery Landing Page
 ├── README.md               # Documentation
-├── shared/                 # Shared Assets
+├── bootstrap-portfolio-collection/shared/                 # Shared Assets
 │   └── assets/img/         # Placeholder images
-└── templates/              # 10 Unique Templates
+└── bootstrap-portfolio-collection/templates/              # 10 Unique Templates
     ├── 01-minimalist/      # Clean & White
     ├── 02-dark-pro/        # Professional Dark Mode
     ├── 03-creative-grid/   # Masonry Grid Layout
